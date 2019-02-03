@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="shortcut icon" type="image/x-icon" href="img\ISA logo white.png" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Data Sciecne</title>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+
+      <!-------timeline------------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+      <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="Test/css/style.css">
+
+
+     
+      <script src="js/angular_file.js"></script>
+
+      <!-- ==========================Javascripts===================== -->
+      <script type="text/javascript" src="js/main.js"></script>
+
+      <script type="text/javascript">
+        function scroll_to_div(div_id)
+        {
+          $('html,body').animate(
+            {
+              scrollTop: $("#"+div_id).offset().top
+            },'slow');
+        }
+      </script>
+
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="manifest.json">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" type="text/css"  href="Styles/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+      <!-- ==============================Stylesheet==================== -->
+      <link rel="stylesheet" type="text/css"  href="Styles/Mainpage.css">
+      <link rel="stylesheet" type="text/css" href="Styles/prettyPhoto.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+      <style type="text/css" >
+         .nav > li > a:hover, .nav > li > a:focus {
+             color:blue;
+             background-color: #EF92A5;
+             text-decoration: none;
+           }
+           hr{
+             background-color:#6495ED;
+           }
+           header {
+            background:url("img/dark.jpg");
+            background-repeat: no-repeat ;
+            background-position:bottom center;
+            background-size: cover;
+            color: #cfcfcf;
+            position: relative;
+            height: 100%;
+          }
+      </style>
+    </head>
+    <body ng-app="myApp">
+
+
+<!--------------------------------------------------nav closed---------------------------------------->
+
+      <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      	    <img src="img\acsa.png" height="50px" width="50px">
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" >
+              <li><a class="page_scroll" style="font-size:1.1em;" onclick = "scroll_to_div('about-section')">About</a></li>
+              <li><a class="page_scroll" style="font-size:1.1em;" onclick = "scroll_to_div('section1')">Wings</a></li>
+              <li><a href="events.html" class="page_scroll" style="font-size:1.1em;" onclick = "scroll_to_div('events')">Events</a></li>
+              <li><a class="page_scroll" style="font-size:1.1em;" onclick = "scroll_to_div('Past-events')">Past Events</a></li>
+              <li><a class="page-scroll" style="font-size:1.1em;" onclick = "scroll_to_div('team-section')">Team</a></li>
+              <li><a class="page-scroll" style="font-size:1.1em;" onclick = "scroll_to_div('social-section')">Contact Us</a></li>
+              
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+
+
+<!--------------------------------------------------nav closed---------------------------------------->
+
+
+
+
+
+
+
+ <!----------------------------------------------- Header -------------------------------------------->
+      <header class="text-center" name="home">
+        <div class="intro-text">
+          <img src="img/logo1.png" height="200px" breadth="50%" style="margin-top:-100px;">
+          <h1>Association Of Computer Science-<span class="color">SVCE</span></h1>
+          <p>Inspire  | Innovate</p>
+          <div class="clearfix"></div>
+          <div style="text-align:center;font-size:1.4em;">
+            Enlightening Minds  | <span class="color">Svce'19</span> |  Ignite The Spark Within
+          </div>
+       </div>
+      </header>
+<!----------------------------------------------- Header -------------------------------------------->
+
+
+
+
+
+
+<!-------------------------------------------------------- About Section ---------------------------------------->
+
+<div id="about-section" style="background-color: #f6f6f6;">
+  <div class="container">
+    <div class="section-title">
+      <h1>About Us</h1>
+      <hr style="background-color:#6495ED;">
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 style="text-decoration-color:#6495ED">Who We Are?</h4>
+        <p>Learning at SVCE has a pragmatic approach with a clear focus, valuing individual vision, intellectual discipline, and a sense of teamwork. We aim at developing our students to their full potential, preparing them to take the next step towards career success.</p>
+      </div>
+      <div class="col-md-6">
+        <h4 style="text-decoration-color:#6495ED">What We Do?</h4>
+        <p>SVCE mixes and remixes fun, learning and growing up. The most important part of your life is the years spent discovering who you are and what you want to be. There’s no place better than SVCE to spend those precious years. </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-------------------------------------------------closed About Section -------------------------------------->
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------Departments------------------------------------------>
+
+<div ng-controller="departments">
+  <div ng-repeat="x in myObj">
+    <div id={{x.id}} style="text-align:justify;padding-top:{{x.padding}};">
+      <div class="container">
+        <div class="section-title center">
+          <h1 style="text-align:left;">{{x.Name}}</h1>
+          <hr style="background-color:#6495ED;">
+          <br>
+          <div class="col-md-3 col-sm-6 team">
+            <img src={{x.imgsrc}} height="180px">
+          </div>
+          <div class="col-md-9 col-sm-6 team" style = "text-align:'justify'">
+            <br><br><br>
+            <div>{{x.desc1}}</div><br>
+            <div>{{x.desc2}}</div><br>
+            <div>{{x.desc3}}</div><br>
+            <div>{{x.desc4}}</div><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<!--------------------------------------------------closed Departments------------------------------------------------------------------------------->
+
+
+
+
+
+<!-----------------------------------------------------Timeline----------------------------------------------------->
+
+<div id="Past-events">
+<div style=" color: #7f8c97;
+ ">
+ <br>
+ <br>
+  <div class="col-lg-12 text-center">
+            <h1 class="section-heading text-uppercase">Past-events</h1>
+            <h3 class="section-subheading text-muted">"Time Is Illusion"- Albert Einstein</h3>
+          </div>
+  <br>
+  <br>
+ <br>
+  <br> <div class="timeline-container">
+  
+  <div id="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Python And Data Analytics</h2>
+          <p>
+           3-Day Hands - On Session "PYTHON PROGRAMMING
+            AND DATA ANALYTICS"
+            To understand why Python is a useful
+            scripting language for developers,
+            To learn how to design and program
+            Python applications.
+          </p>
+          <span class="time-stamp">04-06, Oct 2018</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>Cloud & Block Chain Computing(CBCC)</h2>
+          <p>
+            A 2-Day Workshop on "Cloud & Block Chain Computing(CBCC)" organized by the Department of Computer Science in association with IEEE Hyderabad Chapter 
+          </p>
+          <span class="time-stamp"> 28-29, September 2018</span>
+        </div>
+      </div>
+
+
+       <div class="timeline-item">
+        <div class="timeline-icon">
+         <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>2-Day Workshop on IoT</h2>
+          <p>
+           2 - Day Workshop on “IoT-Internet Of Things” in association with <b> iB Hubs</b>
+           The student is able to learn Understanding of IoT.
+           Usage of various sensors,
+           Tools & Technologies of IoT,
+           Life Cycle of IoT,
+           Usage of various Hardware Platforms,
+           Programming with various tools.
+          </p>
+           <span class="time-stamp">28-29, September 2018</span>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+         <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>Tekhack</h2>
+          <p>
+           2K18-TEK HACK @ SV Colleges|| ORGANISED BY JNTU ANANTHAPURAMU || IN COLLABORATION WITH SMARTBRIDGE || SPONCERED BY IBM-WATSON
+          </p>
+           <span class="time-stamp">8-9, September 2018</span>
+        </div>
+      </div>
+
+       <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Big Data Using Hadoop</h2>
+          <p><b>It was an Expert Lecture</b>
+             To provide overview about limitations of the existing solutions for Big Data,
+             To understand how Hadoop solves the Big Data problem,
+             To analyze the common Hadoop ecosystem components,
+             To understand the Hadoop Architecture & HDFS,
+             To get a clear idea regarding MapReduce,
+             Implementation of Spark and the need of Spark.
+          </p>
+           <span class="time-stamp">27th & 28th,August 2018</span>
+        </div>
+      </div>
+
+
+       <div class="timeline-item">
+        <div class="timeline-icon">
+         <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>Internet Of Things</h2>
+          <p>
+           5-DAY Industry Supported Training Programme
+            "INTERNET OF THINGS" in association with
+            NITTTR Chandigarh
+
+          </p>
+           <span class="time-stamp">06-10,August 2018</span>
+        </div>
+      </div>
+
+       <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Introduction to Robotics</h2>
+          <p>A 2-day workshop on "Introduction to Robotics" through the e-Yantra Lab Setup
+          Initiative (eLSI) is organized by the Department of CSE in association with IIT, Bombay. eYantra
+          is a project supported by MHRD through the National Mission on Education through ICT
+          (NMEICT) to spread Embedded systems and Robotics education in colleges across India.
+          </p>
+           <span class="time-stamp">28th & 29th,June 2018</span>
+        </div>
+      </div>
+
+    
+
+       
+
+  </div>
+  </div>
+  
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+<!---------------------------------------Closed Timeline--------------------------------------------->
+
+
+
+
+<!----------------------------------------Team Section------------------------------------------------------>
+
+<div id="team-section">
+  <div class="container">
+    <div class="section-title">
+      <h1>The Executive Board</h1>
+      <hr style="background-color:#6495ED;">
+    </div>
+    <div id="row" align="center">
+        <div class="col-md-12 col-sm-6 team" align="center">
+        <div class="thumbnail">
+            <div class="random1">
+            <img src="img/vivo123.jpeg" alt="..." class="team-img" data-toggle="modal" data-target="#vivo">
+            </div>
+        <div class="middle123">
+            <div class="text">Dr. P E S N Krishna Prasad</div>
+        </div>
+          <div class="caption">
+            <h3>Dr. P E S N Krishna Prasad</h3>
+            <p>Professor & Head , CSE</p>
+          </div>
+        </div>
+      </div><br>
+
+       <div class="col-md-6 col-sm-3 team">
+        <div class="thumbnail">
+            <div class="random1">
+            <img src="img/team/New/niklesh.jpg" alt="..." class="team-img" data-toggle="modal" data-target="#niklesh">
+            </div>
+            <div class="middle123">
+                <div class="text">Nam123</div>
+            </div>
+          <div class="caption">
+            <h3>Nam123</h3>
+            <p>Nam123</p>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-6 col-sm-3 team">
+        <div class="thumbnail">
+            <div class="random1">
+            <img src="img/team/New/sukrit.jpg" alt="..." class="team-img" data-toggle="modal" data-target="#sukrit">
+            </div>
+        <div class="middle123">
+            <div class="text">Nam123</div>
+        </div>
+          <div class="caption">
+            <h3>Nam123</h3>
+            <p>Nam123</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-6 col-sm-3 team">
+        <div class="thumbnail">
+            <div class="random1">
+            <img src="img/team/New/rishabh.jpg" alt="..." class="team-img" data-toggle="modal" data-target="#rishabh">
+            </div>
+        <div class="middle123">
+            <div class="text">Nam123</div>
+        </div>
+          <div class="caption">
+            <h3>Nam123</h3>
+            <p>Nam123</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-3 team">
+        <div class="thumbnail">
+            <div class="random1">
+            <img src="img/team/New/Devesh.jpg" alt="..." class="team-img" data-toggle="modal" data-target="#devesh">
+            </div>
+            <div class="middle123">
+                <div class="text">Nam123</div>
+            </div>
+          <div class="caption">
+            <h3>Nam123</h3>
+            <p>Nam123</p>
+          </div>
+        </div>
+      </div>    
+         
+    </div>
+  </div>
+</div>
+<br>
+</div>
+<!-----------------------------------------Closed Team Section------------------------------------------------------>  
+
+
+
+
+
+
+
+
+<style type="text/css">
+.team-img{ border-radius:50%; opacity:1;}
+.team-img:hover{
+  border-radius:0;
+    -ms-transform: scale(1.8); /* IE 9 */
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0.9;
+}
+
+.middle123 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 69.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.thumbnail{
+    text-align:center;
+}
+.random1{
+    display:inline-block;
+}
+.random1:hover + .middle123 {
+    opacity: 1;
+}
+
+.text {
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+</style>
+
+
+
+
+
+
+<!--------------------------------------------- Contact Section -------------------------------------------------------------------->
+
+<div id="social-section" align="center" style="margin-top:-50px;">
+  <div class="container">
+    <div class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/isavitchapter/?ref=page_homepage_panel"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/isa_vit_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <span color="" style="font-weight:800;">Contact us:  8328371360,9505132501 <br>Email: svcolleges@svce.edu.in,hod_cse@svce.edu.in</span>
+  </div>
+</div>
+
+<!--------------------------------------------------closed Contact Section ------------------------------------------------------------>
+
+
+
+</body>
+</html>
